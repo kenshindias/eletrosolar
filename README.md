@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# 📆 EletroSolar & Climatização – Sistema de Agendamentos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um sistema web desenvolvido para a empresa **EletroSolar & Climatização**, localizada em Andorinha – BA. O objetivo da aplicação é permitir que clientes abram chamados descrevendo seus problemas e agendem uma visita técnica de forma simples e organizada.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- 📄 **Formulário de chamados** com nome completo e descrição do problema
+- 👨‍🔧 **Área Administrativa com senha** para visualizar e gerenciar os chamados
+- 🔄 **Controle de status**: Pendente, Agendado, Concluído
+- 🌙 **Modo escuro e claro** com alternância
+- 🗂️ **Persistência de dados** no `localStorage`
+- 💻 **Interface responsiva**, compatível com PCs e celulares
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tecnologias Utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React.js + Vite**
+- **TypeScript**
+- **SCSS** (com tema claro/escuro)
+- **React Router DOM**
+- **HTML5 + CSS3**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧪 Como rodar o projeto localmente
+
+# 1. Clone o repositório
+git clone https://github.com/kenshindias/eletrosolar-agendamentos.git
+
+# 2. Acesse a pasta
+cd eletrosolar-agendamentos
+
+# 3. Instale as dependências
+npm install
+
+# 4. Rode o projeto
+npm run dev
+Acesse em http://localhost:5173
+
+🔐 Acesso administrativo
+Para acessar a área administrativa, vá para /admin
+
+Senha padrão: admin123
+
+📦 Deploy
+Você pode acessar a versão online do sistema através do Vercel (link será adicionado após deploy).
+
+📌 Sobre a empresa
+EletroSolar & Climatização atua com soluções em energia solar, manutenção de sistemas elétricos e climatização de ambientes.
+
+👨‍💻 Desenvolvido por
+Ighor José Reis Dias
+📍 Andorinha - BA
+💼 Desenvolvedor Frontend | Suporte Técnico | Programador Júnior
+📧 ighordias@outlook.com
+🔗 linkedin.com/in/ighordias
